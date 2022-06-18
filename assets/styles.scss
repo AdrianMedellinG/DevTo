@@ -5,13 +5,303 @@
             box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('font/SEGOEUI.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+  }
+
 .body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI','Open Sans', sans-serif;
     width: 100wh;
     height: 100vh;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    color: #171717;
+    
+}
+
+.main-body {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    color: #171717;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* ASide Left - Eduardo*/
 /* Footer - Ara*/
 /* ASide Right & Main - Julio  */
 /* Nav & Burger - Adrian */
+
+/* --------------------------  INICIA ADRIAN---------------- ------------------------------------- */ 
+header{
+        width: 100%;
+        background-color: #fff;
+        
+    nav {
+        background-color: #fff;
+        height: 56px;
+        padding-top: 8px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .navigation {
+            padding-left: 0px;
+            padding-right: 0px;
+
+
+            .left{
+                width: 50%;
+                gap: 8px;
+
+                .burger-menu {
+                    font-size: 22px;
+                        height: 40px;
+                        width: 40px;
+                        padding-top: 10px;
+                        text-align: center;
+                        margin-left: 0px;
+                        padding: 25%;
+
+                        &:hover{
+                            background-color: #3b49df1a;
+                            color: #3B49DF;
+                            border-radius: 10px;
+                        }
+
+                }
+                .logo{
+                    width: 50px;
+                    height: 40px;
+                }
+
+                .search{
+                    width: 420px;
+                    display:flex;
+                    flex-direction:row;
+                    border: 1px solid #c9ccf3;
+                    border-radius: 10px;
+                    align-items: center;
+                    margin: 0px 16px;
+                    padding-left: 10px;
+                    
+                    input{
+                        border-style: none;
+                        flex-grow:2;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                       
+                    }
+
+                     i{
+                        float: right;
+                        font-size: 21px;
+                        height: 40px;
+                        width: 40px;
+                        padding: 8px 8px;
+
+                        &:hover{
+                            background-color: hsla(235, 72%, 55%, 0.102);
+                            color: #3B49DF;
+                            border-radius: 10px;
+                        }
+
+                    }
+
+                    &:focus-within {
+                        border: 2px solid #3B49DF;
+                      }
+
+                }
+            }
+
+            .right{
+                width: 50%;
+                gap: 8px;
+            
+                .btn{
+                    color: #3B49DF;
+                    border-color: #3B49DF ;
+                    height: 40px;
+                    width: 122px;
+                    place-content: center;
+                    font-weight: 500;
+                    
+                    &:hover{
+                        background-color: #3B49DF;
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+
+                .search{
+                    height: 40px;
+                    width: 40px;
+                    text-align-last: center;
+                    font-size:24px; 
+                    color: #404040;
+                    
+                    &:hover{
+                        background-color: #3b49df1a;
+                        color: #3B49DF;
+                        border-radius: 10px;
+                    }
+                }
+
+                    .bell{
+                        height: 40px;
+                        width: 40px;
+                        text-align-last: center;
+                        font-size:24px;
+                        padding: 0px 8px; 
+                        color: #404040;
+                        
+                        &:hover{
+                            background-color: #3b49df1a;
+                            color: #3B49DF;
+                            border-radius: 10px;
+                        }
+
+                        span {
+                            height: 22px;
+                            width: 15px;
+                            font-size: 10px;
+                            text-align: center;
+                            padding: 25%;
+                        }
+                    }
+                
+                    
+
+                .btn-group {
+                    cursor: pointer;
+                    
+                }
+
+                .btn-group .user {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                        &:hover{
+                            background-color: #3b49df1a;
+                            color: #3B49DF;
+                            border-radius: 50px;
+                        }
+                    }
+
+                .menu {
+                    width: 250px;
+                    height: auto;
+
+                    li{
+                        color: #404040;
+                        padding: 8px 16px;
+
+                        .name p{
+                            color: gray;
+                            font-size: 14px;
+                            margin-bottom: 0px;
+
+                            &:hover{
+                                color: #3B49DF;
+                                
+                            }
+                        }
+                        
+                        &:hover{
+                            background-color: #3b49df1a;
+                            border-radius: 10px;
+                            color: #3B49DF;
+                            
+                        }
+                    }
+                    a {
+                        color: #404040;
+                        text-decoration: none;
+
+                        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: #3B49DF;
+                        }
+                    }
+
+                    ul{
+                        list-style-type:none
+                    }
+                
+                    .divider{
+                        border-top: 1px solid #bbb;
+                        margin: 8px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(min-width:1024px) {
+
+    header .container .navigation .right .search {
+        display: none;
+    }
+}
+
+@media screen and(min-width:767px) {
+
+    header nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header nav .navigation .right .search {
+        display: none;
+    }
+}
+
+
+/* ------------------------------ TERMINA ADRIAN ---------------- ------------------------------------- */
+/* --------------------------  INICIA ARACELY ---------------- ------------------------------------- */ 
+footer{
+    background: rgb(229,229,229);
+    padding: 48px;
+    text-align: center;
+    font-size: 14px;
+    color: #404040;
+    
+    p{
+        a{
+            text-decoration: none;
+            color: #3B49DF;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .logo-footer{
+        height: 40px;
+        width: 40px;
+        &:hover{
+            background-color: #3b49df1a;
+            border-radius: 10px;
+            color: #3B49DF;
+            
+        }
+    }
+
+    
+}
+/* ------------------------------ TERMINA ARACELY ---------------- ------------------------------------- */ 
+/* ------------------------------ INICIA ADRIAN V2 ---------------- ------------------------------------- */ 
+.aside-details-left .social {
+
+    text-align: center;
+    height: 61px;
+    width: 64px;
+
+    
+}

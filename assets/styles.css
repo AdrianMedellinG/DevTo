@@ -4,13 +4,252 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Segoe UI";
+  src: url("font/SEGOEUI.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
 .body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Segoe UI", "Open Sans", sans-serif;
   width: 100wh;
   height: 100vh;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  color: #171717;
+}
+
+.main-body {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  color: #171717;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* ASide Left - Eduardo*/
 /* Footer - Ara*/
 /* ASide Right & Main - Julio  */
-/* Nav & Burger - Adrian *//*# sourceMappingURL=styles.css.map */
+/* Nav & Burger - Adrian */
+/* --------------------------  INICIA ADRIAN---------------- ------------------------------------- */
+header {
+  width: 100%;
+  background-color: #fff;
+}
+header nav {
+  background-color: #fff;
+  height: 56px;
+  padding-top: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header nav .navigation {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header nav .navigation .left {
+  width: 50%;
+  gap: 8px;
+}
+header nav .navigation .left .burger-menu {
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: 0px;
+  padding: 25%;
+}
+header nav .navigation .left .burger-menu:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #3B49DF;
+  border-radius: 10px;
+}
+header nav .navigation .left .logo {
+  width: 50px;
+  height: 40px;
+}
+header nav .navigation .left .search {
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #c9ccf3;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0px 16px;
+  padding-left: 10px;
+}
+header nav .navigation .left .search input {
+  border-style: none;
+  flex-grow: 2;
+}
+header nav .navigation .left .search input:focus-visible {
+  outline: none;
+}
+header nav .navigation .left .search i {
+  float: right;
+  font-size: 21px;
+  height: 40px;
+  width: 40px;
+  padding: 8px 8px;
+}
+header nav .navigation .left .search i:hover {
+  background-color: hsla(235deg, 72%, 55%, 0.102);
+  color: #3B49DF;
+  border-radius: 10px;
+}
+header nav .navigation .left .search:focus-within {
+  border: 2px solid #3B49DF;
+}
+header nav .navigation .right {
+  width: 50%;
+  gap: 8px;
+}
+header nav .navigation .right .btn {
+  color: #3B49DF;
+  border-color: #3B49DF;
+  height: 40px;
+  width: 122px;
+  place-content: center;
+  font-weight: 500;
+}
+header nav .navigation .right .btn:hover {
+  background-color: #3B49DF;
+  color: white;
+  text-decoration: underline;
+}
+header nav .navigation .right .search {
+  height: 40px;
+  width: 40px;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-size: 24px;
+  color: #404040;
+}
+header nav .navigation .right .search:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #3B49DF;
+  border-radius: 10px;
+}
+header nav .navigation .right .bell {
+  height: 40px;
+  width: 40px;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-size: 24px;
+  padding: 0px 8px;
+  color: #404040;
+}
+header nav .navigation .right .bell:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #3B49DF;
+  border-radius: 10px;
+}
+header nav .navigation .right .bell span {
+  height: 22px;
+  width: 15px;
+  font-size: 10px;
+  text-align: center;
+  padding: 25%;
+}
+header nav .navigation .right .btn-group {
+  cursor: pointer;
+}
+header nav .navigation .right .btn-group .user {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+header nav .navigation .right .btn-group .user:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #3B49DF;
+  border-radius: 50px;
+}
+header nav .navigation .right .menu {
+  width: 250px;
+  height: auto;
+}
+header nav .navigation .right .menu li {
+  color: #404040;
+  padding: 8px 16px;
+}
+header nav .navigation .right .menu li .name p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+header nav .navigation .right .menu li .name p:hover {
+  color: #3B49DF;
+}
+header nav .navigation .right .menu li:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  border-radius: 10px;
+  color: #3B49DF;
+}
+header nav .navigation .right .menu a {
+  color: #404040;
+  text-decoration: none;
+}
+header nav .navigation .right .menu a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #3B49DF;
+          text-decoration-color: #3B49DF;
+}
+header nav .navigation .right .menu ul {
+  list-style-type: none;
+}
+header nav .navigation .right .menu .divider {
+  border-top: 1px solid #bbb;
+  margin: 8px 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  header .container .navigation .right .search {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  header nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  header nav .navigation .right .search {
+    display: none;
+  }
+}
+/* ------------------------------ TERMINA ADRIAN ---------------- ------------------------------------- */
+/* --------------------------  INICIA ARACELY ---------------- ------------------------------------- */
+footer {
+  background: rgb(229, 229, 229);
+  padding: 48px;
+  text-align: center;
+  font-size: 14px;
+  color: #404040;
+}
+footer p a {
+  text-decoration: none;
+  color: #3B49DF;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer .logo-footer {
+  height: 40px;
+  width: 40px;
+}
+footer .logo-footer:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  border-radius: 10px;
+  color: #3B49DF;
+}
+
+/* ------------------------------ TERMINA ARACELY ---------------- ------------------------------------- */
+/* ------------------------------ INICIA ADRIAN V2 ---------------- ------------------------------------- */
+.aside-details-left .social {
+  text-align: center;
+  height: 61px;
+  width: 64px;
+}/*# sourceMappingURL=styles.css.map */
