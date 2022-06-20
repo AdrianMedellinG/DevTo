@@ -1,6 +1,7 @@
 DEV.to project
 
-Authors: 
+<strong>Authors</strong>
+
 Adrian Medellin
 Aracely Romero
 Eduardo Villa
