@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico" />
-      
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico" />
+
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,170 +18,314 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>DEV Community 👩‍💻👨‍💻</title>
 </head>
+
 <body>
     <header class="container-fluid sticky-top">
         <nav>
             <div class="navigation d-flex justify-content-between">
                 <div class="left d-flex align-self-center">
-                    
+
                     <label for="menu-burger" class="">
-                    <div class="burger-menu d-md-none d-flex"><i class="fa-solid fa-bars"></i></div>
-                        <input type="checkbox" id="menu-burger" class="menu-burger" hidden>
-                    </label> 
+                        <div class="burger-menu d-md-none d-flex"><i class="fa-solid fa-bars"></i></div>
+                    </label>
                     <div>
                         <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
                     </div>
                     <div class="search d-none d-md-flex justify-content-between">
                         <input class="search-input" type="text" placeholder="Search...">
-                        <i class="fa fa-magnifying-glass"></i>
+                        <img src="images/icons/search.png" alt="">
                     </div>
                 </div>
                 <div class="right d-flex justify-content-end">
                     <div class="btn d-none d-md-flex">Create Post</div>
-                    <a href="#"><div class="search"><i class="fa fa-magnifying-glass"></i></div></a>
-                    <a href="#"><div class="bell"><i class="fa-regular fa-bell position-relative">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill-2 bg-danger">
-                         2
-                      </span></i></div></a>
+                    <a href="#">
+                        <div class="search"><i class="fa fa-magnifying-glass"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="bell"><img src="images/icons/notifications.png" alt="">
+                            <div class="notification">2</div>
+                        </div>
+                    </a>
                     <div></div>
                     <div class="btn-group">
-                            <img class="user" src="https://randomuser.me/api/portraits/thumb/men/75.jpg" alt="" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="user" src="https://randomuser.me/api/portraits/thumb/men/75.jpg" alt=""
+                            data-bs-toggle="dropdown" aria-expanded="false">
                         <ul class="dropdown-menu dropdown-menu-end menu">
-                           
-                            <a href="#"><li><span class="name"><strong>Juan Perez</strong><p>@juanperez</p></span></li></a>
+
+                            <a href="#">
+                                <li><span class="name"><strong>Juan Perez</strong>
+                                        <p>@juanperez</p>
+                                    </span></li>
+                            </a>
                             <div class="divider"></div>
-                            <a href="#"><li>Dashboard</li></a>
-                            <a href="#"><li>Create post</li></a>
-                            <a href="#"><li>Reading list</li></a>
-                            <a href="#"><li>Setting</li></a>
-                           <div class="divider"></div>
-                            <a href="#"><li>Sing Out</li></a>
+                            <a href="#">
+                                <li>Dashboard</li>
+                            </a>
+                            <a href="#">
+                                <li>Create post</li>
+                            </a>
+                            <a href="#">
+                                <li>Reading list</li>
+                            </a>
+                            <a href="#">
+                                <li>Setting</li>
+                            </a>
+                            <div class="divider"></div>
+                            <a href="#">
+                                <li>Sing Out</li>
+                            </a>
                         </ul>
                     </div>
-                 
+
                 </div>
             </div>
-        </nav>    
+        </nav>
     </header>
 
-<div class="main-body container-fluid absolute-top">
-    <div class="d-flex  w-100 px-5">
-        <aside class="aside-details-left w-25">
-            <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
+    <div class="main-body container-fluid absolute-top">
+        <div class="main-page nav-details d-inline-flex w-100 px-1 menu-responsive">
+            <input type="checkbox" id="menu-burger" class="menu-burger" hidden>
+            <aside class="aside-left nav-details">
+                <div class="header-menu">
+                    <h5><strong>DEV Community</strong></h5>
+                    <label for="menu-burger" class="">
+                        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </label>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li><img src="images/icons/home.png" alt="">Home</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/reading_list.png" alt="">Reading list</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/listing.png" alt="">Listings</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/podcasts.png" alt="">Podcast</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/videos.png" alt="">Videos</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/tags.png" alt="">Tags</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/faq.png" alt="">FAQ</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/shop.png" alt="">Forem Shop</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/sponsors.png" alt="">Sponsors</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/about.png" alt="">About</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/contact.png" alt="">Contact</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/guides.png" alt="">Guides</li>
+                    </a>
+
+                </ul>
+                <h6><strong>Other</strong></h6>
+                <ul>
+                    <a href="#">
+                        <li><img src="images/icons/thumb_up.png" alt="">Code of Conduct</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/policy.png" alt="">Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="images/icons/eyes.png" alt="">Terms of use</li>
+                    </a>
+                </ul>
+                <div class="social d-flex justify-content-between ms-md-5">
+                    <a href=""><i class="fa-brands fa-twitter icons"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square icons"></i></a>
+                    <a href=""><i class="fa-brands fa-github icons"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square icons"></i></a>
+                    <a href=""><i class="fa-brands fa-twitch icons"></i></a>
+                </div>
+                <div class="mytags d-flex justify-content-between ms-md-5">
+                    <h5><strong>My tags</strong></h5>
+                    <a href="#"><img src="images/icons/customize.png" class="icon-mytags" alt=""></a>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Nearly 700 developers have contributed to the Forem
+                            codebase that powers DEV and other communities. 🤯</h6>
+                        <h3>Thank you!</h3>
+                        <p><a href="">👉 Forem on GitHub 👈</a> </p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 text-muted"><a href="#" class="card-link">DEV Community</a> is a
+                            community of 864,192 amazing developers</h4>
+                        <p class="card-text">We're a place where coders share, stay up-to-date and grow their careers.
+                        </p>
+                        <button type="button" class="btn btn-light">Create acount</button>
+                        <button type="button" class="btn btn-light">Log in</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="d-flex w-100 px-5">
+            <aside class="aside-details-left flex-md-column d-flex px-3"">
+            <div class=" social flex-md-column d-flex justify-content-md-center aling-content-center">
                 <div class="icons flex-md-row">
                     <button>
-                        <img src="images/icons/like.png" alt="">
+                        <div class="heart">
+                            <img src="images/icons/like.png" alt="">
+                        </div>
                         <p>14</p>
                     </button>
                 </div>
-            </div>
-            <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
-                <div class="icons flex-md-row">
-                    <button>
+        </div>
+        <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
+            <div class="icons flex-md-row">
+                <button>
+                    <div class="unicorn">
                         <img src="images/icons/unicorn.png" alt="">
-                        <p>14</p>
-                    </button>
-                </div>
-
+                    </div>
+                    <p>6</p>
+                </button>
             </div>
-            <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
-                <div class="icons flex-md-row">
-                    <button>
+
+        </div>
+        <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
+            <div class="icons flex-md-row">
+                <button>
+                    <div class="save">
                         <img src="images/icons/save.png" alt="">
-                        <p>14</p>
-                    </button>
-                </div>
-
+                    </div>
+                    <p>5</p>
+                </button>
             </div>
-            <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
-                <div class="icons flex-md-row">
-                    <button>
+
+        </div>
+        <div class="social flex-md-column d-flex justify-content-md-center aling-content-center">
+            <div class="icons flex-md-row">
+                <button>
+                    <div class="more">
                         <img src="images/icons/more.png" alt="">
-                        <p>14</p>
-                    </button>
-                </div>
-
+                    </div>
+                    <p></p>
+                </button>
             </div>
+
+        </div>
         </aside>
 
-<main class="w-50">
-    <div class="nav-links">
-        <div class="links">hola</div>
-        <div class="links"></div>
-        <div class="links"></div>
-    </div>
-
-    <div class="cards">
-        <div class="card d-flex">
-            <div class="user">
-                <img src="" alt="">
-                <div class="name"></div>
-                <div class="date"></div>
+        <main class="w-50">
+            <div class="nav-links">
+                <div class="links">hola</div>
+                <div class="links"></div>
+                <div class="links"></div>
             </div>
-            <div class="topic">
-                <h2></h2>
-                <div class="hashtags">
-                    <div class="hashtags-1"></div>
-                    <div class="hashtags-2"></div>
+
+            <div class="cards">
+                <div class="card d-flex">
+                    <div class="user">
+                        <img src="" alt="">
+                        <div class="name"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="topic">
+                        <h2></h2>
+                        <div class="hashtags">
+                            <div class="hashtags-1"></div>
+                            <div class="hashtags-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="reactions">
+                        <div class="reactions-left">
+                            <img src="" alt="">
+                            <div>5 Reactions</div>
+                            <img src="" alt="">
+                            <div>2 Comments</div>
+                        </div>
+                        <div class="reactions-right">
+                            <div class="min-read"></div>
+                            <div class="save"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-flex">
+                    <div class="user">
+                        <img src="" alt="">
+                        <div class="name"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="topic">
+                        <h2></h2>
+                        <div class="hashtags">
+                            <div class="hashtags-1"></div>
+                            <div class="hashtags-2"></div>
+                        </div>
+                    </div>
+                    <div class="reactions">
+                        <div class="reactions-left">
+                            <img src="" alt="">
+                            <div>5 Reactions</div>
+                            <img src="" alt="">
+                            <div>2 Comments</div>
+                        </div>
+                        <div class="reactions-right">
+                            <div class="min-read"></div>
+                            <div class="save"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="reactions">
-            <div class="reactions-left">
-                <img src="" alt=""><div>5 Reactions</div>
-                <img src="" alt=""><div>2 Comments</div>
-            </div>
-            <div class="reactions-right">
-                <div class="min-read"></div>
-                <div class="save"></div>
-            </div>
-        </div>
-    </div>
-        <div class="card d-flex">
-        <div class="user">
-            <img src="" alt="">
-            <div class="name"></div>
-            <div class="date"></div>
-        </div>
-        <div class="topic">
-            <h2></h2>
-            <div class="hashtags">
-                <div class="hashtags-1"></div>
-                <div class="hashtags-2"></div>
-            </div>
-        </div>
-        <div class="reactions">
-            <div class="reactions-left">
-                <img src="" alt=""><div>5 Reactions</div>
-                <img src="" alt=""><div>2 Comments</div>
-            </div>
-            <div class="reactions-right">
-                <div class="min-read"></div>
-                <div class="save"></div>
-            </div>
-        </div>
-    </div>
-</div>
-</main>
+        </main>
 
-<aside class="aside-right w-25">
-    <div class="card-text">
-        <img src="" alt="">
-        <div class="text-bold">hola</div>
+        <aside class="aside-details-right w-25 px-3">
+            <div class="card my-3" style="width: 18rem;">
+                <div class="topcolor"></div>
+                <div class="d-flex justify-flex-start card-name px-3">
+                    <div><img src="https://randomuser.me/api/portraits/thumb/men/75.jpg" class="img-user"></div>
+                    <div class="p-3" class="card-title"><strong>Julio Velazquez</strong></div>
+                </div>
+                <div class="card-body mt-5">
+                    <a href="#" class="btn btn-primary w-100">Follow</a>
+                    <p class="card-text mt-2 w-100"> Modular and scalable Front End architecture 🗃️ Experienced en
+                        HTML, CSS and Bootstrap 💻 </p>
+                    <p><strong>LOCATION</strong></p>
+                    <p style="line-height: 3px;">Los Cabos</p>
+                </div>
+            </div>
+            <div class="card my-3" style="width: 18rem;">
+                <div class="d-flex justify-flex-start card-name">
+                    <h5 class="px-2"><strong>More from</strong><a href="#"><strong> Julio Velazquez</strong></a></h5>
+                </div>
+                <div class="card-body mt-5">
+                    <p class="card-text mt-2 w-100"> Easiest list formatting you'll ever use. #javascript #react </p>
+        </aside>
     </div>
-    <div class="listing"></div>
-</aside>    
-</div>
-</div>
-<footer class="footer"> 
-    <p> <a href="#"><strong>Dev Community</strong></a> — A contructive and inclusive social network for software developers. With you every step of your journey. </p> 
-    <p style="line-height: 5px;">Built on <a href="#">Forem</a> - the <a href="#">open source</a> software that powers <a href="#">DEV</a> and other inclusive communities.</p>
-    <p style="line-height: 5px;">Made with love and <a href="#">Ruby on Rails.</a> DEV Community <span title="copyright">©</span> 2016 - 2022.</p> 
-    <a href="#"><img src="images/logo-footer.png" class="logo-footer" alt="logo-footer"></a>
+    </div>
 
-</footer>
+    <footer class="footer">
+        <p> <a href="#"><strong>Dev Community</strong></a> — A contructive and inclusive social network for software
+            developers. With you every step of your journey. </p>
+        <p class="m-0>Built on <a href=" #">Forem</a> - the <a href="#">open source</a> software that powers <a
+                href="#">DEV</a> and other inclusive communities.</p>
+        <p>Made with love and <a href="#">Ruby on Rails.</a> DEV Community <span title="copyright">©</span> 2016 - 2022.
+        </p>
+        <a href="#"><img src="images/logo-footer.png" class="logo-footer" alt="logo-footer"></a>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
