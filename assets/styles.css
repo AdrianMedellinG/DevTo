@@ -516,6 +516,7 @@ footer .logo-footer:hover {
 .aside-details-right .card {
   position: relative;
   border-radius: 10px;
+  background-color: transparent;
 }
 .aside-details-right .card .card-name {
   position: absolute;
@@ -528,8 +529,16 @@ footer .logo-footer:hover {
   text-decoration: none;
   color: #3B49DF;
 }
-.aside-details-right .card .card-name h5 a:hover {
-  text-decoration: underline;
+.aside-details-right .card .card-body {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.aside-details-right .card .card-body p {
+  color: #404040;
+}
+.aside-details-right .card .selected:hover {
+  background-color: #fff;
+  cursor: pointer;
 }
 .aside-details-right .card .img-user {
   width: 48px;
