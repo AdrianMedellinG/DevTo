@@ -15,10 +15,10 @@ Code based on Dev.to (index and detail's page).
 ## Technologies
 
 <li>HTML5</li>
-<li>Bootstrap 5</li>
+<li>CSS</li>
 <li>SaSS</li>
+<li>Bootstrap 5</li>
 <li>FontAwsome 6</li>
-<li>Google Fonts</li>
 
 ## Changelog
 
