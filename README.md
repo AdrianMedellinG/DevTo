@@ -1,6 +1,6 @@
 <h1>DEV.to project</h1>
 
-<strong>Authors:</strong> 
+<strong>Authors</strong> 
 <ul>
  <li>Adrian Medellin </li>
  <li>Aracely Romero </li>
