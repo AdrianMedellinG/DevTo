@@ -34,6 +34,9 @@
 header {
   width: 100%;
   background-color: #fff;
+  z-index: 98;
+  position: sticky;
+  top: 0px;
 }
 header nav {
   background-color: #fff;
@@ -275,11 +278,12 @@ footer .logo-footer:hover {
 /* TERMINA FOOTER */
 /* ASIDE LEFT */
 .aside-left {
-  padding: 0px 16px 16px 16px;
+  padding: 0px 16px 16px 0px;
   width: 25%;
 }
 .aside-left ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 .aside-left ul a {
   text-decoration: none;
@@ -353,11 +357,14 @@ footer .logo-footer:hover {
   .aside-left {
     display: none;
     background-color: #fff;
-    position: relative;
-    top: -56px;
-    left: -5px;
-    z-index: 9999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
     width: 250px;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
   }
   .aside-left ul {
     padding-left: 0px;
