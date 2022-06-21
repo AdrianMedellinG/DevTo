@@ -660,3 +660,157 @@ footer {
 }
 
 /* TERMINA  ----  DETAILS - ASIDE RIGHT */
+/* ---- MAIN INDEX ---- */
+
+@mixin list-style {
+    &:hover {
+        background-color: white;
+        color: #3B49DF;
+    }
+}
+
+@mixin new-btn-style {
+    background-color: #FCD34D;
+    border-radius: 0.375rem;
+    padding: 4px;
+    color: #78350f;
+    width: 37px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+
+.posts {
+    .post-body {
+        .each-post {
+            margin-bottom: 20px;
+            border: .1rem solid grey;
+            border-radius: 10px;
+            background-color: white;
+            
+            .first-post {
+                padding: 0px;
+              
+
+                img{
+                    width: 100%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                }
+            }
+
+            .card-pp{
+                img{
+                    margin-top: 16px;
+                    margin-left: 8px;
+                    border-radius: 50%;
+                    height: 35px;
+                    width: 35px;
+                    
+                }
+            }
+
+            .card {
+                border: 0px;
+                .card-body {
+
+                    .card-name {
+                        font-size: 14px;
+                    }
+
+                    .card-date {
+                        font-size: 12px;
+                    }
+
+                    .card-title {
+                        font-size: 20px;
+                    }
+
+                    .tags {
+                        .card-link {
+                            font-size: 14px;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .each-post {
+        .card{
+        display: block;
+        }
+       
+    }
+    .posts .post-body .each-post .card-pp img {
+        margin-left: 0px;
+    }
+}
+.aside-right {
+    .card {
+        margin-bottom: 20px;
+
+        .card-body {
+            .card-text {
+                color: #3B49DF;
+            }
+        }
+
+        .card-header {
+            font-size: 1.25rem;
+            font-weight: solid;
+            background-color: transparent;
+        }
+
+        .list-group {
+            .topics {
+                font-size: .9rem;
+                color: gray;
+            }
+
+            .brand-new {
+                @include new-btn-style;
+                font-size: 14px
+            }
+        }
+    }
+}
+
+.list-group-item {
+    @include list-style;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .aside-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aside-left {
+        display: none;
+    }
+}
+
+main .container ul li {
+    margin: 8px;
+    
+
+    .nav-link{
+        background-color: transparent;
+        color: #171717;
+        
+    }
+
+    button{
+            background-color: red; 
+        
+    }
+}
+/* TERMINA  ----  INDEX - MAIN */

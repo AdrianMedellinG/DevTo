@@ -564,3 +564,108 @@ footer .logo-footer:hover {
 }
 
 /* TERMINA  ----  DETAILS - ASIDE RIGHT */
+/* ---- MAIN INDEX ---- */
+.posts .post-body .each-post {
+  margin-bottom: 20px;
+  border: 0.1rem solid grey;
+  border-radius: 10px;
+  background-color: white;
+}
+.posts .post-body .each-post .first-post {
+  padding: 0px;
+}
+.posts .post-body .each-post .first-post img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.posts .post-body .each-post .card-pp img {
+  margin-top: 16px;
+  margin-left: 8px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.posts .post-body .each-post .card {
+  border: 0px;
+}
+.posts .post-body .each-post .card .card-body .card-name {
+  font-size: 14px;
+}
+.posts .post-body .each-post .card .card-body .card-date {
+  font-size: 12px;
+}
+.posts .post-body .each-post .card .card-body .card-title {
+  font-size: 20px;
+}
+.posts .post-body .each-post .card .card-body .tags .card-link {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .each-post .card {
+    display: block;
+  }
+
+  .posts .post-body .each-post .card-pp img {
+    margin-left: 0px;
+  }
+}
+.aside-right .card {
+  margin-bottom: 20px;
+}
+.aside-right .card .card-body .card-text {
+  color: #3B49DF;
+}
+.aside-right .card .card-header {
+  font-size: 1.25rem;
+  font-weight: solid;
+  background-color: transparent;
+}
+.aside-right .card .list-group .topics {
+  font-size: 0.9rem;
+  color: gray;
+}
+.aside-right .card .list-group .brand-new {
+  background-color: #FCD34D;
+  border-radius: 0.375rem;
+  padding: 4px;
+  color: #78350f;
+  width: 37px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-size: 14px;
+}
+
+.list-group-item:hover {
+  background-color: white;
+  color: #3B49DF;
+}
+
+@media only screen and (max-width: 1023px) {
+  .aside-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aside-left {
+    display: none;
+  }
+}
+main .container ul li {
+  margin: 8px;
+}
+main .container ul li .nav-link {
+  background-color: transparent;
+  color: #171717;
+}
+main .container ul li button {
+  background-color: red;
+}
+
+/* TERMINA  ----  INDEX - MAIN */
