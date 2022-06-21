@@ -221,64 +221,170 @@
         </div>
         </aside>
 
-        <main class="w-100">
-            <div class="nav-links">
-                <div class="links">hola</div>
-                <div class="links"></div>
-                <div class="links"></div>
+        <main class="posts w-md-75 w-100">
+            <div class="container">
+                <div class="post-header"></div>
+             
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Relevant</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Latest</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Top</button>
+                    </li>
+                  </ul>
+
             </div>
-
-            <div class="cards">
-                <div class="card d-flex">
-                    <div class="user">
-                        <img src="" alt="">
-                        <div class="name"></div>
-                        <div class="date"></div>
+            <div class="container post-body tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="each-post row">
+                    <div class="first-post col-12"><img src="images/post1.png" alt="">
                     </div>
-                    <div class="topic">
-                        <h2></h2>
-                        <div class="hashtags">
-                            <div class="hashtags-1"></div>
-                            <div class="hashtags-2"></div>
-                        </div>
-                    </div>
-
-                    <div class="reactions">
-                        <div class="reactions-left">
-                            <img src="" alt="">
-                            <div>5 Reactions</div>
-                            <img src="" alt="">
-                            <div>2 Comments</div>
-                        </div>
-                        <div class="reactions-right">
-                            <div class="min-read"></div>
-                            <div class="save"></div>
+                    <div class="card-pp col-1"> <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=".PP"></div>
+                    <div class="card  col-11">
+                        <div class="card-body">
+                            <h5 class="card-name">Helitha Rupisange</h5>
+                            <h6 class="card-date">Jun 17(6 hours ago)</h6>
+                            <h2 class="card-title">Set Up Your First ThreeJS Project - Three Part Setup </h2>
+                            <div class="container .tags d-flex">
+                                <a href="#" class="card-link">#threejs</a>
+                                <a href="#" class="card-link">#javascript</a>
+                                <a href="#" class="card-link">#webdev</a>
+                                <a href="#" class="card-link">#tutorial</a>
+                            </div>
+                            <div class="container d-flex justify-content-between">
+                                <div class="gap-icons">
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/like.png" alt="">Reaction
+                                    </a>
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/comment.png" alt="">comments
+                                    </a>
+                                </div>
+                                <div>
+                                    <small class="read-time">16 min read</small>
+                                    <button class="btn btn-secondary button-save">Save</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card d-flex">
-                    <div class="user">
-                        <img src="" alt="">
-                        <div class="name"></div>
-                        <div class="date"></div>
-                    </div>
-                    <div class="topic">
-                        <h2></h2>
-                        <div class="hashtags">
-                            <div class="hashtags-1"></div>
-                            <div class="hashtags-2"></div>
+                <div class="each-post row">
+                    <div class="card-pp col-1"> <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=".PP"></div>
+                    <div class="card  col-11">
+                        <div class="card-body">
+                            <h5 class="card-name">Julio Velázquez</h5>
+                            <h6 class="card-date">Jun 16(25 hours ago)</h6>
+                            <h2 class="card-title">I can't believe I am already doing things like this! </h2>
+                            <div class="container .tags d-flex">
+                                <a href="#" class="card-link">#Bootcamp</a>
+                                <a href="#" class="card-link">#learning</a>
+                                <a href="#" class="card-link">#fullstack</a>
+                            </div>
+                            <div class="container d-flex justify-content-between">
+                                <div class="gap-icons">
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/like.png" alt="">Reaction
+                                    </a>
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/comment.png" alt="">comments
+                                    </a>
+                                </div>
+                                <div>
+                                    <small class="read-time">8 min read</small>
+                                    <button class="btn btn-secondary button-save">Save</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="reactions">
-                        <div class="reactions-left">
-                            <img src="" alt="">
-                            <div>5 Reactions</div>
-                            <img src="" alt="">
-                            <div>2 Comments</div>
+                </div>
+                <div class="each-post row">
+                    <div class="card-pp col-1"> <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=".PP"></div>
+                    <div class="card  col-11">
+                        <div class="card-body">
+                            <h5 class="card-name">Adrian Medellin</h5>
+                            <h6 class="card-date">Jun 18(9 hours ago)</h6>
+                            <h2 class="card-title">This has been a great learning experience, I totally recommend
+                                Kodemia </h2>
+                            <div class="container .tags d-flex">
+                                <a href="#" class="card-link">#React</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                            <div class="container d-flex justify-content-between">
+                                <div class="gap-icons">
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/like.png" alt="">Reaction
+                                    </a>
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/comment.png" alt="">comments
+                                    </a>
+                                </div>
+                                <div>
+                                    <small class="read-time">10 min read</small>
+                                    <button class="btn btn-secondary button-save">Save</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="reactions-right">
-                            <div class="min-read"></div>
-                            <div class="save"></div>
+                    </div>
+                </div>
+                <div class="each-post row">
+                    <div class="card-pp col-1"> <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=".PP"></div>
+                    <div class="card  col-11">
+                        <div class="card-body">
+                            <h5 class="card-name">Araceli Romero</h5>
+                            <h6 class="card-date">Jun 15(4 days ago)</h6>
+                            <h2 class="card-title">Making this Bootcamp has challenged me in so many different
+                                levels</h2>
+                            <div class="container .tags d-flex">
+                                <a href="#" class="card-link">#learning</a>
+                                <a href="#" class="card-link">#bootcamp</a>
+                            </div>
+                            <div class="container d-flex justify-content-between">
+                                <div class="gap-icons">
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/like.png" alt="">Reaction
+                                    </a>
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/comment.png" alt="">comments
+                                    </a>
+                                </div>
+                                <div>
+                                    <small class="read-time">20 min read</small>
+                                    <button class="btn btn-secondary button-save">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-post row">
+                    <div class="card-pp col-1"> <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=".PP"></div>
+                    <div class="card  col-11">
+                        <div class="card-body">
+                            <h5 class="card-name">Eduardo Villa</h5>
+                            <h6 class="card-date">Jun 4(5 days ago)</h6>
+                            <h2 class="card-title">Developing is a long journey, we have learned so many new things
+                            </h2>
+                            <div class="container .tags d-flex">
+                                <a href="#" class="card-link">#HTML</a>
+                                <a href="#" class="card-link">#CSS</a>
+                            </div>
+                            <div class="container d-flex justify-content-between">
+                                <div class="gap-icons">
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/like.png" alt="">Reaction
+                                    </a>
+                                    <a href="" class="edition-icon">
+                                        <img src="/icons/comment.png" alt="">comments
+                                    </a>
+                                </div>
+                                <div>
+                                    <small class="read-time">7 min read</small>
+                                    <button class="btn btn-secondary button-save">Save</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
